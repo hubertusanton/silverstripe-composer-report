@@ -1,0 +1,17 @@
+---
+Name: composer-report-client
+---
+SilverStripe\Core\Injector\Injector:
+  Webium\ComposerReport\Core\Composer\ComposerRunner:
+    class: Webium\ComposerReport\Core\Composer\ProcessComposerRunner
+  Webium\ComposerReport\Core\Client\ReportSender:
+    class: Webium\ComposerReport\Core\Client\GuzzleReportSender
+
+# Keep the token out of SilverStripe backtraces (it is also wrapped in a Secret object)
+SilverStripe\Dev\Backtrace:
+  ignore_function_args:
+    - ['Webium\ComposerReport\Core\Client\GuzzleReportSender', 'send']
+    - ['Webium\ComposerReport\Core\Client\ReportClient', 'run']
+    - ['Webium\ComposerReport\Core\Security\TokenHasher', 'hash']
+    - ['Webium\ComposerReport\Core\Security\TokenHasher', 'matches']
+    - ['Webium\ComposerReport\Core\Security\Secret', 'fromString']

@@ -1,0 +1,8 @@
+{
+    "advisories": [],
+    "abandoned": {
+        "php-http/message-factory": "psr/http-factory"
+    },
+    "filter": [],
+    "cooldown": []
+}

@@ -1,0 +1,129 @@
+nl:
+  Webium\ComposerReport\Admin\ReportView:
+    ABANDONED: Verlaten
+    ADVISORIES: Beveiligingsmeldingen
+    AFFECTED: 'Getroffen versies'
+    AUDIT_UNAVAILABLE: 'De audit is bij dit rapport mislukt, zie de fouten.'
+    DIRECT: Direct
+    ENVIRONMENT: Omgeving
+    ERRORS: Fouten
+    ID: 'CVE / ID'
+    LEVEL: Update
+    LINK: Link
+    NO_ADVISORIES: 'Geen bekende beveiligingsmeldingen.'
+    OUTDATED: 'Verouderde pakketten'
+    OUTDATED_UNAVAILABLE: 'composer outdated is bij dit rapport mislukt, zie de fouten.'
+    PACKAGE: Pakket
+    RECEIVED: Ontvangen
+    REPORTED: Gemeld
+    SEVERITY: Ernst
+    TITLE: Titel
+    UP_TO_DATE: 'Alles is up-to-date.'
+    VERSIONS: 'Huidig → nieuwste'
+  Webium\ComposerReport\Email:
+    AFFECTED: 'Getroffen versies'
+    AUDIT_FAILING_HINT: 'Het CMS toont de fouten van het laatste rapport, zoals een uitgeschakelde proc_open of geen toegang tot Packagist.'
+    AUDIT_FAILING_INTRO: '{project} stuurt rapporten, maar composer audit is al meer dan {days} dagen niet gelukt.'
+    ID: 'CVE / ID'
+    LAST_AUDIT: 'Laatste geslaagde audit'
+    LAST_REPORT: 'Laatste rapport'
+    NEW_ADVISORIES_INTRO: 'Er zijn nieuwe beveiligingsmeldingen gevonden voor {project}.'
+    OPEN_IN_CMS: 'Open het project in de Composer monitor'
+    PACKAGE: Pakket
+    SEVERITY: Ernst
+    STALE_HINT: 'Controleer de cronjob van de site en de uitvoer van sake tasks:composer-report.'
+    STALE_INTRO: 'De Composer monitor heeft al meer dan {days} dagen geen rapport van {project} ontvangen.'
+    TITLE: Titel
+  Webium\ComposerReport\Server\Admin\ComposerMonitorAdmin:
+    MENUTITLE: 'Composer monitor'
+  Webium\ComposerReport\Server\Admin\ProjectItemRequest:
+    CONFIRM: 'Een nieuw token aanmaken? Het huidige token werkt dan direct niet meer.'
+    GENERATE: 'Nieuw token aanmaken'
+    SUDO_REQUIRED: 'Bevestig eerst je wachtwoord.'
+    TOKEN_GENERATED: 'Nieuw token aangemaakt'
+    TOKEN_SHOWN_ONCE: 'Zet dit als COMPOSER_REPORT_TOKEN in de .env van de site. Het wordt maar één keer getoond.'
+  Webium\ComposerReport\Server\Admin\StatusBadge:
+    ADVISORIES: Meldingen
+    AUDIT_FAILING: 'Audit faalt'
+    ERROR: Fout
+    INACTIVE: Inactief
+    OK: OK
+    STALE: Stil
+  Webium\ComposerReport\Server\Model\ComposerReport:
+    PLURALNAME: Rapporten
+    PLURALS:
+      one: 'Een rapport'
+      other: '{count} rapporten'
+    RAW_PAYLOAD: 'Ruwe payload'
+    SINGULARNAME: Rapport
+    db_AbandonedCount: 'Aantal verlaten'
+    db_AdvisoryCount: 'Aantal meldingen'
+    db_FrameworkVersion: Frameworkversie
+    db_OutdatedCount: 'Aantal verouderd'
+    db_Payload: Payload
+    db_PhpVersion: PHP-versie
+    db_ReceivedAt: Ontvangen
+    db_SchemaVersion: Schemaversie
+    has_one_Project: Project
+  Webium\ComposerReport\Server\Model\ComposerReportNotification:
+    PLURALNAME: Notificaties
+    PLURALS:
+      one: 'Een notificatie'
+      other: '{count} notificaties'
+    SINGULARNAME: Notificatie
+    db_Attempts: Pogingen
+    db_Basis: Basis
+    db_Data: Data
+    db_LastError: 'Laatste fout'
+    db_SentAt: Verstuurd
+    db_Type: Type
+    has_one_Project: Project
+  Webium\ComposerReport\Server\Model\ComposerReportProject:
+    ABANDONED: 'Verlaten pakketten'
+    ADVISORIES: Beveiligingsmeldingen
+    EMAIL_INVALID: 'Dit is geen geldig e-mailadres.'
+    ERRORS: 'Fouten in laatste rapport'
+    HISTORY: Rapporten
+    LAST_AUDIT: 'Laatste geslaagde audit'
+    LAST_REPORT: 'Laatste rapport'
+    NEVER: Nooit
+    NOTIFY_EMAIL: 'E-mail voor notificaties'
+    NOTIFY_EMAIL_DESCRIPTION: 'Optioneel; gaat voor de standaardontvanger.'
+    NO_REPORT: 'Nog geen rapport ontvangen.'
+    OUTDATED: 'Verouderde pakketten'
+    PERMISSION_CATEGORY: 'Composer monitor'
+    PERMISSION_MANAGE: 'Projecten en tokens van de Composer monitor beheren'
+    PERMISSION_MANAGE_HELP: 'Projecten aanmaken, bewerken en verwijderen en tokens aanmaken. Bekijken vraagt toegang tot de sectie.'
+    PLURALNAME: Projecten
+    PLURALS:
+      one: 'Een project'
+      other: '{count} projecten'
+    SINGULARNAME: Project
+    SLUG_DESCRIPTION: 'Moet gelijk zijn aan COMPOSER_REPORT_PROJECT op de site.'
+    SLUG_INVALID: 'Gebruik kleine letters, cijfers en enkele koppeltekens (maximaal 64 tekens), bijvoorbeeld "klant-x".'
+    SLUG_TAKEN: 'Een ander project gebruikt deze slug al.'
+    TAB_HISTORY: Geschiedenis
+    TAB_LATEST: 'Laatste rapport'
+    TITLE_REQUIRED: 'Een titel is verplicht.'
+    TOKEN: Token
+    TOKEN_NOT_SET: 'Niet ingesteld: sla het project op en gebruik daarna "Nieuw token aanmaken"'
+    TOKEN_SET: Ingesteld
+    db_Active: Actief
+    db_LastAbandonedCount: 'Laatst aantal verlaten'
+    db_LastAdvisoryCount: 'Laatst aantal meldingen'
+    db_LastAdvisoryKeys: 'Laatste meldingssleutels'
+    db_LastAuditAt: 'Laatste audit'
+    db_LastErrorCount: 'Laatst aantal fouten'
+    db_LastOutdatedCount: 'Laatst aantal verouderd'
+    db_LastReportAt: 'Laatste rapport'
+    db_NotifyEmail: 'E-mail voor notificaties'
+    db_Slug: Slug
+    db_Title: Titel
+    db_TokenHash: Tokenhash
+    has_many_Notifications: Notificaties
+    has_many_Reports: Rapporten
+  Webium\ComposerReport\Server\Notification\EmailChannel:
+    NEVER: nooit
+    SUBJECT_AUDIT_FAILING: '[Composer monitor] De audit van {project} blijft mislukken'
+    SUBJECT_NEW_ADVISORIES: '[Composer monitor] {count} nieuwe beveiligingsmeldingen voor {project}'
+    SUBJECT_STALE: '[Composer monitor] Geen rapport van {project}'

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "example-project",
+  "generated_at": "2026-11-21T03:00:00+01:00",
+  "environment": {
+    "php_version": "8.3.36",
+    "composer_version": "2.11.2",
+    "silverstripe_framework": "6.3.0",
+    "hostname": "web01"
+  },
+  "outdated": {
+    "locked": []
+  },
+  "audit": {
+    "advisories": {
+      "example/package": [
+        {
+          "advisoryId": "PKSA-0000-0000-0002",
+          "packageName": "example/package",
+          "affectedVersions": "<1.4.2",
+          "title": "Example advisory without a CVE",
+          "cve": null,
+          "link": "https://github.com/advisories/GHSA-0000-0000-0002",
+          "reportedAt": "2026-10-01T12:00:00+00:00",
+          "sources": [
+            {
+              "name": "GitHub",
+              "remoteId": "GHSA-0000-0000-0002"
+            }
+          ],
+          "severity": "low"
+        }
+      ]
+    },
+    "abandoned": [],
+    "filter": [],
+    "cooldown": []
+  },
+  "errors": [],
+  "future_key": "unknown keys are allowed"
+}

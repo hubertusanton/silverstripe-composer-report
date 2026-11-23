@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "project": "example-project",
+  "generated_at": "2026-11-21T03:00:00+01:00",
+  "environment": {
+    "php_version": "8.3.36",
+    "composer_version": "2.11.2",
+    "silverstripe_framework": "6.3.0",
+    "hostname": "web01"
+  },
+  "outdated": {
+    "locked": [
+      {
+        "name": "dompdf/dompdf",
+        "direct-dependency": true,
+        "homepage": "https://github.com/dompdf/dompdf",
+        "source": "https://github.com/dompdf/dompdf/tree/v2.0.8",
+        "version": "v2.0.8",
+        "release-age": "2 years old",
+        "release-date": "2024-04-29T13:06:17+00:00",
+        "latest": "v3.1.6",
+        "latest-release-date": "2026-07-20T12:29:38+00:00",
+        "latest-status": "update-possible",
+        "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+        "abandoned": false
+      },
+      {
+        "name": "guzzlehttp/psr7",
+        "direct-dependency": true,
+        "homepage": null,
+        "source": "https://github.com/guzzle/psr7/tree/2.4.4",
+        "version": "2.4.4",
+        "release-age": "3 years old",
+        "release-date": "2023-03-09T13:19:02+00:00",
+        "latest": "3.5.1",
+        "latest-release-date": "2026-11-19T20:35:18+00:00",
+        "latest-status": "update-possible",
+        "description": "PSR-7 message implementation that also provides common utility methods",
+        "abandoned": false
+      },
+      {
+        "name": "php-http/message-factory",
+        "direct-dependency": true,
+        "homepage": "http://php-http.org",
+        "source": "https://github.com/php-http/message-factory/tree/1.1.0",
+        "version": "1.1.0",
+        "release-age": "3 years old",
+        "release-date": "2023-04-14T14:16:17+00:00",
+        "latest": "1.1.0",
+        "latest-release-date": "2023-04-14T14:16:17+00:00",
+        "latest-status": "up-to-date",
+        "description": "Factory interfaces for PSR-7 HTTP Message",
+        "warning": "Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.",
+        "abandoned": "psr/http-factory"
+      }
+    ]
+  },
+  "audit": null,
+  "errors": [
+    "`composer audit --locked --format=json --no-interaction --no-ansi --no-plugins --no-scripts` gave no valid JSON (exit 100)",
+    "composer audit could not reach the package repositories; the outdated data may come from the Composer cache"
+  ]
+}

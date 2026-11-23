@@ -1,0 +1,6 @@
+{
+    "description": "Synthetic fixture: only an abandoned package on its latest version",
+    "require": {
+        "php-http/message-factory": "^1.1"
+    }
+}

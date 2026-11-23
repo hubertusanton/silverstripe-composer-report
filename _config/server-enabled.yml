@@ -1,0 +1,25 @@
+---
+Name: composer-report-server-enabled
+After: '#coreroutes'
+Only:
+  # Strict comparison: only an unquoted true (or yes) in .env switches the server on
+  envvarset:
+    COMPOSER_REPORT_SERVER_ENABLED: true
+---
+SilverStripe\Control\Director:
+  rules:
+    'composer-report/ingest': 'Webium\ComposerReport\Server\Control\IngestController'
+
+Webium\ComposerReport\Server\Admin\ComposerMonitorAdmin:
+  ignore_menuitem: false
+  required_permission_codes: 'CMS_ACCESS_Webium\ComposerReport\Server\Admin\ComposerMonitorAdmin'
+
+Webium\ComposerReport\Server\Task\NotifyTask:
+  is_enabled: true
+
+# Clients authenticate with their token, never with basic auth
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\Security\BasicAuthMiddleware:
+    properties:
+      URLPatterns:
+        '#^composer-report/ingest$#': false

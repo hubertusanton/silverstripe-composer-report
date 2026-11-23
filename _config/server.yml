@@ -1,0 +1,8 @@
+---
+Name: composer-report-server
+---
+# Loaded on every install; the parts that expose anything live in server-enabled.yml
+SilverStripe\Core\Injector\Injector:
+  Webium\ComposerReport\Server\Notification\NotificationService:
+    constructor:
+      - - '%$Webium\ComposerReport\Server\Notification\EmailChannel'

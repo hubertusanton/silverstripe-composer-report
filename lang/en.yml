@@ -1,0 +1,129 @@
+en:
+  Webium\ComposerReport\Admin\ReportView:
+    ABANDONED: Abandoned
+    ADVISORIES: 'Security advisories'
+    AFFECTED: 'Affected versions'
+    AUDIT_UNAVAILABLE: 'The audit failed for this report, see the errors.'
+    DIRECT: Direct
+    ENVIRONMENT: Environment
+    ERRORS: Errors
+    ID: 'CVE / ID'
+    LEVEL: Update
+    LINK: Link
+    NO_ADVISORIES: 'No known advisories.'
+    OUTDATED: 'Outdated packages'
+    OUTDATED_UNAVAILABLE: 'composer outdated failed for this report, see the errors.'
+    PACKAGE: Package
+    RECEIVED: Received
+    REPORTED: Reported
+    SEVERITY: Severity
+    TITLE: Title
+    UP_TO_DATE: 'Everything is up to date.'
+    VERSIONS: 'Current → latest'
+  Webium\ComposerReport\Email:
+    AFFECTED: 'Affected versions'
+    AUDIT_FAILING_HINT: 'The CMS shows the errors of the latest report, such as a disabled proc_open or no access to Packagist.'
+    AUDIT_FAILING_INTRO: '{project} sends reports, but composer audit has not succeeded for more than {days} days.'
+    ID: 'CVE / ID'
+    LAST_AUDIT: 'Last successful audit'
+    LAST_REPORT: 'Last report'
+    NEW_ADVISORIES_INTRO: 'New security advisories were found for {project}.'
+    OPEN_IN_CMS: 'Open the project in the Composer monitor'
+    PACKAGE: Package
+    SEVERITY: Severity
+    STALE_HINT: 'Check the cron job of the site and the output of sake tasks:composer-report.'
+    STALE_INTRO: 'The Composer monitor has not received a report from {project} for more than {days} days.'
+    TITLE: Title
+  Webium\ComposerReport\Server\Admin\ComposerMonitorAdmin:
+    MENUTITLE: 'Composer monitor'
+  Webium\ComposerReport\Server\Admin\ProjectItemRequest:
+    CONFIRM: 'Generate a new token? The current token stops working immediately.'
+    GENERATE: 'Generate new token'
+    SUDO_REQUIRED: 'Verify your password first.'
+    TOKEN_GENERATED: 'New token generated'
+    TOKEN_SHOWN_ONCE: 'Set this as COMPOSER_REPORT_TOKEN in the .env of the site. It is shown only once.'
+  Webium\ComposerReport\Server\Admin\StatusBadge:
+    ADVISORIES: Advisories
+    AUDIT_FAILING: 'Audit failing'
+    ERROR: Error
+    INACTIVE: Inactive
+    OK: OK
+    STALE: Stale
+  Webium\ComposerReport\Server\Model\ComposerReport:
+    PLURALNAME: Reports
+    PLURALS:
+      one: 'A Report'
+      other: '{count} Reports'
+    RAW_PAYLOAD: 'Raw payload'
+    SINGULARNAME: Report
+    db_AbandonedCount: 'Abandoned count'
+    db_AdvisoryCount: 'Advisory count'
+    db_FrameworkVersion: 'Framework version'
+    db_OutdatedCount: 'Outdated count'
+    db_Payload: Payload
+    db_PhpVersion: 'Php version'
+    db_ReceivedAt: 'Received at'
+    db_SchemaVersion: 'Schema version'
+    has_one_Project: Project
+  Webium\ComposerReport\Server\Model\ComposerReportNotification:
+    PLURALNAME: Notifications
+    PLURALS:
+      one: 'A Notification'
+      other: '{count} Notifications'
+    SINGULARNAME: Notification
+    db_Attempts: Attempts
+    db_Basis: Basis
+    db_Data: Data
+    db_LastError: 'Last error'
+    db_SentAt: 'Sent at'
+    db_Type: Type
+    has_one_Project: Project
+  Webium\ComposerReport\Server\Model\ComposerReportProject:
+    ABANDONED: 'Abandoned packages'
+    ADVISORIES: Advisories
+    EMAIL_INVALID: 'This is not a valid email address.'
+    ERRORS: 'Errors in last report'
+    HISTORY: Reports
+    LAST_AUDIT: 'Last successful audit'
+    LAST_REPORT: 'Last report'
+    NEVER: Never
+    NOTIFY_EMAIL: 'Notification email'
+    NOTIFY_EMAIL_DESCRIPTION: 'Optional; overrides the default recipient.'
+    NO_REPORT: 'No report received yet.'
+    OUTDATED: 'Outdated packages'
+    PERMISSION_CATEGORY: 'Composer monitor'
+    PERMISSION_MANAGE: 'Manage Composer monitor projects and tokens'
+    PERMISSION_MANAGE_HELP: 'Create, edit and delete projects and generate tokens. Viewing needs access to the section.'
+    PLURALNAME: Projects
+    PLURALS:
+      one: 'A Project'
+      other: '{count} Projects'
+    SINGULARNAME: Project
+    SLUG_DESCRIPTION: 'Must match COMPOSER_REPORT_PROJECT on the site.'
+    SLUG_INVALID: 'Use lowercase letters, digits and single hyphens (at most 64 characters), e.g. "client-x".'
+    SLUG_TAKEN: 'Another project already uses this slug.'
+    TAB_HISTORY: History
+    TAB_LATEST: 'Latest report'
+    TITLE_REQUIRED: 'A title is required.'
+    TOKEN: Token
+    TOKEN_NOT_SET: 'Not set: save the project, then use "Generate new token"'
+    TOKEN_SET: Set
+    db_Active: Active
+    db_LastAbandonedCount: 'Last abandoned count'
+    db_LastAdvisoryCount: 'Last advisory count'
+    db_LastAdvisoryKeys: 'Last advisory keys'
+    db_LastAuditAt: 'Last audit at'
+    db_LastErrorCount: 'Last error count'
+    db_LastOutdatedCount: 'Last outdated count'
+    db_LastReportAt: 'Last report at'
+    db_NotifyEmail: 'Notify email'
+    db_Slug: Slug
+    db_Title: Title
+    db_TokenHash: 'Token hash'
+    has_many_Notifications: Notifications
+    has_many_Reports: Reports
+  Webium\ComposerReport\Server\Notification\EmailChannel:
+    NEVER: never
+    SUBJECT_AUDIT_FAILING: '[Composer monitor] The audit of {project} keeps failing'
+    SUBJECT_NEW_ADVISORIES: '[Composer monitor] {count} new security advisories for {project}'
+    SUBJECT_STALE: '[Composer monitor] No report from {project}'
