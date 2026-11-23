@@ -1,0 +1,103 @@
+{
+    "locked": [
+        {
+            "name": "dompdf/dompdf",
+            "direct-dependency": true,
+            "homepage": "https://github.com/dompdf/dompdf",
+            "source": "https://github.com/dompdf/dompdf/tree/v2.0.8",
+            "version": "v2.0.8",
+            "release-age": "2 years old",
+            "release-date": "2024-04-29T13:06:17+00:00",
+            "latest": "v3.1.6",
+            "latest-release-date": "2026-07-20T12:29:38+00:00",
+            "latest-status": "update-possible",
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "abandoned": false
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/guzzle/psr7/tree/2.4.4",
+            "version": "2.4.4",
+            "release-age": "3 years old",
+            "release-date": "2023-03-09T13:19:02+00:00",
+            "latest": "3.5.1",
+            "latest-release-date": "2026-11-19T20:35:18+00:00",
+            "latest-status": "update-possible",
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "abandoned": false
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "direct-dependency": false,
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "source": "https://github.com/dompdf/php-font-lib/tree/0.5.6",
+            "version": "0.5.6",
+            "release-age": "2 years old",
+            "release-date": "2024-01-29T14:45:26+00:00",
+            "latest": "1.0.2",
+            "latest-release-date": "2026-01-20T14:10:26+00:00",
+            "latest-status": "update-possible",
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "abandoned": false
+        },
+        {
+            "name": "phenx/php-svg-lib",
+            "direct-dependency": false,
+            "homepage": "https://github.com/PhenX/php-svg-lib",
+            "source": "https://github.com/dompdf/php-svg-lib/tree/0.5.4",
+            "version": "0.5.4",
+            "release-age": "2 years old",
+            "release-date": "2024-04-08T12:52:34+00:00",
+            "latest": "1.0.2",
+            "latest-release-date": "2026-01-02T16:01:13+00:00",
+            "latest-status": "update-possible",
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "abandoned": false
+        },
+        {
+            "name": "php-http/message-factory",
+            "direct-dependency": true,
+            "homepage": "http://php-http.org",
+            "source": "https://github.com/php-http/message-factory/tree/1.1.0",
+            "version": "1.1.0",
+            "release-age": "3 years old",
+            "release-date": "2023-04-14T14:16:17+00:00",
+            "latest": "1.1.0",
+            "latest-release-date": "2023-04-14T14:16:17+00:00",
+            "latest-status": "up-to-date",
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "warning": "Package php-http/message-factory is abandoned, you should avoid using it. Use psr/http-factory instead.",
+            "abandoned": "psr/http-factory"
+        },
+        {
+            "name": "psr/http-message",
+            "direct-dependency": false,
+            "homepage": "https://github.com/php-fig/http-message",
+            "source": "https://github.com/php-fig/http-message/tree/1.1",
+            "version": "1.1",
+            "release-age": "3 years old",
+            "release-date": "2023-04-04T09:50:52+00:00",
+            "latest": "2.0",
+            "latest-release-date": "2023-04-04T09:54:51+00:00",
+            "latest-status": "update-possible",
+            "description": "Common interface for HTTP messages",
+            "abandoned": false
+        },
+        {
+            "name": "sabberworm/php-css-parser",
+            "direct-dependency": false,
+            "homepage": "https://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "source": "https://github.com/MyIntervals/PHP-CSS-Parser/tree/v8.9.0",
+            "version": "v8.9.0",
+            "release-age": "1 year old",
+            "release-date": "2025-07-11T13:20:48+00:00",
+            "latest": "v9.5.0",
+            "latest-release-date": "2026-09-20T15:02:00+00:00",
+            "latest-status": "update-possible",
+            "description": "Parser for CSS Files written in PHP",
+            "abandoned": false
+        }
+    ]
+}

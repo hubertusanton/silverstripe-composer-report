@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "project": "example-project",
+  "generated_at": "2026-11-21T03:00:00+01:00",
+  "environment": {
+    "php_version": "8.3.36",
+    "composer_version": "2.11.2",
+    "silverstripe_framework": "6.3.0",
+    "hostname": "web01"
+  },
+  "outdated": {
+    "locked": []
+  },
+  "audit": {
+    "advisories": {
+      "example/package": [
+        {
+          "advisoryId": "PKSA-0000-0000-0001",
+          "packageName": "example/package",
+          "title": "Missing affectedVersions"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

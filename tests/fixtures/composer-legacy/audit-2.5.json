@@ -1,0 +1,21 @@
+{
+    "advisories": {
+        "example/package": [
+            {
+                "advisoryId": "PKSA-0000-0000-0003",
+                "packageName": "example/package",
+                "affectedVersions": ">=1.0,<1.4.2",
+                "title": "Example advisory in the Composer 2.4-2.6 shape",
+                "cve": "CVE-2026-00003",
+                "link": "https://github.com/advisories/GHSA-0000-0000-0003",
+                "reportedAt": "2026-10-01T12:00:00+00:00",
+                "sources": [
+                    {
+                        "name": "GitHub",
+                        "remoteId": "GHSA-0000-0000-0003"
+                    }
+                ]
+            }
+        ]
+    }
+}

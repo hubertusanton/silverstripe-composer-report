@@ -1,0 +1,33 @@
+{
+    "name": "webium/silverstripe-composer-report",
+    "description": "Pushes composer outdated/audit reports from Silverstripe projects to a central monitor.",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "silverstripe",
+        "composer",
+        "audit",
+        "security",
+        "monitoring"
+    ],
+    "require": {
+        "php": "^8.1",
+        "silverstripe/framework": "^5.4",
+        "silverstripe/admin": "^2.4",
+        "symfony/process": "^6.4 || ^7.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.7",
+        "silverstripe/standards": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webium\\ComposerReport\\": "src/",
+            "Webium\\ComposerReport\\Tests\\": "tests/php/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

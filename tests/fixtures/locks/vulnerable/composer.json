@@ -1,0 +1,15 @@
+{
+  "description": "Synthetic fixture: old versions with known advisories and an abandoned package",
+  "require": {
+    "dompdf/dompdf": "2.0.8",
+    "guzzlehttp/psr7": "2.4.4",
+    "php-http/message-factory": "1.1.0"
+  },
+  "config": {
+    "policy": {
+      "advisories": {
+        "block": false
+      }
+    }
+  }
+}

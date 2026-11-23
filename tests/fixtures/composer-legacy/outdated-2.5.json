@@ -1,0 +1,15 @@
+{
+    "locked": [
+        {
+            "name": "example/package",
+            "direct-dependency": true,
+            "homepage": null,
+            "source": "https://github.com/example/package/tree/1.4.1",
+            "version": "1.4.1",
+            "latest": "1.4.2",
+            "latest-status": "semver-safe-update",
+            "description": "Example package in the Composer 2.4-2.6 shape",
+            "abandoned": false
+        }
+    ]
+}
